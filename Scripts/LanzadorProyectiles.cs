@@ -11,9 +11,12 @@ public class LanzadorProyectiles : MonoBehaviour
     {
         if (Input.GetKeyDown(teclaDisparo))
         {
+            // Creación
             var posicion = origenDisparo.transform.position;
             var rotacion = origenDisparo.transform.rotation;
             var balaCreada = Instantiate(bala, posicion, rotacion);
+
+            // Impulso
             var cuerpoBala = balaCreada.GetComponent<Rigidbody2D>();
             var distancia = origenDisparo.transform.position - transform.position;
             var direccion = distancia.normalized;

@@ -2,12 +2,12 @@
 
 public class AutoDestructor : MonoBehaviour
 {
-    public float tiempoTotal = 3;
+    public float tiempo = 3;
     float tiempoRestante;
 
     private void Start()
     {
-        tiempoRestante = tiempoTotal;
+        tiempoRestante = tiempo;
     }
 
     void Update()

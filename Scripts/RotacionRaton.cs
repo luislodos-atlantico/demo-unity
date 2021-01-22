@@ -1,12 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class RotacionTorreta : MonoBehaviour
+public class RotacionRaton : MonoBehaviour
 {
     public float velocidad = 1;
     public float rotacionSuperior = 60;
     public float rotacionInferior = 350;
+    public GameObject pivote;
 
     void Update()
     {
@@ -16,18 +15,19 @@ public class RotacionTorreta : MonoBehaviour
         var objetivoY = posicionRaton.y;
         var objetivoZ = 0;
         var objetivo = new Vector3(objetivoX, objetivoY, objetivoZ);
-        transform.right = objetivo - transform.position;
+        pivote.transform.right = objetivo - transform.position;
 
         // Limitar rotación
         var rotacionZ = transform.rotation.eulerAngles.z;
-
         if (rotacionZ > rotacionSuperior && rotacionZ < 180)
         {
-            transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotacionSuperior));
+            var rotacionFinal = new Vector3(0, 0, rotacionSuperior);
+            pivote.transform.rotation = Quaternion.Euler(rotacionFinal);
         }
         else if (rotacionZ > 180 && rotacionZ < rotacionInferior)
         {
-            transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotacionInferior));
+            var rotacionFinal = new Vector3(0, 0, rotacionInferior);
+            pivote.transform.rotation = Quaternion.Euler(rotacionFinal);
         }
-     }
+    }
 }
