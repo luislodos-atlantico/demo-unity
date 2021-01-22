@@ -5,8 +5,8 @@ using UnityEngine;
 public class RotacionTorreta : MonoBehaviour
 {
     public float velocidad = 1;
-    public float rotacionSuperiorMaxima = 60;
-    public float rotacionSuperiorMinima = 10;
+    public float rotacionSuperior = 60;
+    public float rotacionInferior = 350;
 
     void Update()
     {
@@ -19,14 +19,15 @@ public class RotacionTorreta : MonoBehaviour
         transform.right = objetivo - transform.position;
 
         // Limitar rotación
-        var rotacion = transform.rotation;
-        if (rotacion.eulerAngles.z > rotacionSuperiorMaxima)
+        var rotacionZ = transform.rotation.eulerAngles.z;
+
+        if (rotacionZ > rotacionSuperior && rotacionZ < 180)
         {
-            transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotacionSuperiorMaxima));
+            transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotacionSuperior));
         }
-        else if (rotacion.eulerAngles.z < rotacionSuperiorMinima)
+        else if (rotacionZ > 180 && rotacionZ < rotacionInferior)
         {
-            transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotacionSuperiorMinima));
+            transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotacionInferior));
         }
      }
 }
