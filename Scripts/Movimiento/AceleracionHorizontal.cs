@@ -12,13 +12,14 @@ public class AceleracionHorizontal : MonoBehaviour
 
     void FixedUpdate()
     {
+        var fuerza = aceleracion * cuerpo.mass;
         if (Input.GetKey(KeyCode.D))
         {
-            cuerpo.AddForce(aceleracion * Vector2.right);
+            cuerpo.AddForce(fuerza * Vector2.right);
         }
         else if (Input.GetKey(KeyCode.A))
         {
-            cuerpo.AddForce(aceleracion * Vector2.left);
+            cuerpo.AddForce(fuerza * Vector2.left);
         }
     }
 }
