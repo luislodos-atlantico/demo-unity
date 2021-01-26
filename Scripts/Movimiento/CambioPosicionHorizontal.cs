@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class CambioPosicion : MonoBehaviour
+public class CambioPosicionHorizontal : MonoBehaviour
 {
     public float velocidad = 1;
 

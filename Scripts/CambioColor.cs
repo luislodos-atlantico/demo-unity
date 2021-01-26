@@ -12,7 +12,7 @@ public class CambioColor : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.C))
+        if (Input.GetMouseButtonUp(0))
         {
             sprite.color = nuevoColor;
         }
