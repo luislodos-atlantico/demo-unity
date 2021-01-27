@@ -63,6 +63,7 @@
     <Compile Include="Assets\Ejercicios\RollingBall\Scripts\Pala.cs" />
     <Compile Include="Assets\Ejercicios\RollingBall\Scripts\CreadorBolas.cs" />
     <Compile Include="Assets\Ejercicios\Tanque\Scripts\DetectorSuelo.cs" />
+    <Compile Include="Assets\Ejercicios\RollingBall\Scripts\CreadorAutomatico.cs" />
     <Compile Include="Assets\Ejercicios\RollingBall\Scripts\MovimientoLanzador.cs" />
     <Compile Include="Assets\Ejercicios\Tanque\Scripts\AceleracionHorizontal.cs" />
     <Compile Include="Assets\Ejercicios\Tanque\Scripts\Salto.cs" />
@@ -70,7 +71,7 @@
     <Compile Include="Assets\Ejercicios\Tanque\Scripts\RotacionRaton.cs" />
     <Compile Include="Assets\Ejercicios\Tanque\Scripts\VelocidadHorizontal.cs" />
     <Compile Include="Assets\Ejercicios\Tanque\Scripts\LanzadorProyectiles.cs" />
-    <Compile Include="Assets\Ejercicios\RollingBall\Scripts\CreadorAutomatico.cs" />
+    <Compile Include="Assets\Ejercicios\RollingBall\Scripts\EfectoContacto.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
