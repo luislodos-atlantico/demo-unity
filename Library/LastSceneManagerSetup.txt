@@ -1,5 +1,0 @@
-sceneSetups:
-- path: Assets/Ejercicios/RollingBall/RollingBall.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
