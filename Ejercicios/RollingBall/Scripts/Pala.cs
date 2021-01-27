@@ -1,24 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Pala : MonoBehaviour
 {
+    public KeyCode tecla = KeyCode.UpArrow;
     HingeJoint2D junta;
+
     void Start()
     {
         junta = GetComponent<HingeJoint2D>();
         junta.useMotor = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(tecla))
         {
             junta.useMotor = true;
         }
-        if (Input.GetKeyUp(KeyCode.Return))
+        if (Input.GetKeyUp(tecla))
         {
             junta.useMotor = false;
         }
