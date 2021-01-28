@@ -2,11 +2,11 @@
 
 public class ReceptorBolas : MonoBehaviour
 {
-    public int bolas = 0;
+    public int numeroBolas = 0;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        bolas++;
+        numeroBolas++;
         var bola = collision.gameObject;
         Destroy(bola);
     }
