@@ -6,8 +6,11 @@ public class ReceptorBolas : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        numeroBolas++;
-        var bola = collision.gameObject;
-        Destroy(bola);
+        if (collision.gameObject.tag == "Bola")
+        {
+            numeroBolas++;
+            var bola = collision.gameObject;
+            Destroy(bola);
+        }
     }
 }
