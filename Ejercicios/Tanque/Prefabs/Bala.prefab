@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 3368992438343955091}
   - component: {fileID: 2620117957848978941}
   - component: {fileID: 3878927929050806053}
-  - component: {fileID: 8077392222288552514}
-  - component: {fileID: 3808346678606418061}
+  - component: {fileID: 6062848437246956227}
   m_Layer: 0
   m_Name: Bala
   m_TagString: Untagged
@@ -50,6 +49,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -74,12 +74,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0883deb6eb0730343baf3bd3f7678096, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 619379638b7e34df79a1efda0d62d836, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.25, y: 0.16}
+  m_Size: {x: 0.17, y: 0.14}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -122,7 +122,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.125
---- !u!114 &8077392222288552514
+--- !u!114 &6062848437246956227
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,21 +131,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5130044362894742915}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c737ee3021b888469cd332254336504, type: 3}
+  m_Script: {fileID: 11500000, guid: 9fbae95f8f9e844e6ae59a604aff8e6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoTotal: 3
---- !u!114 &3808346678606418061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5130044362894742915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 544ba17b58811f84ebbb52dd1930b168, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosion: {fileID: 949626841131226061, guid: 6af2b9d2c0485bc4e945f1ee60c1ff68,
-    type: 3}
+  explosion: {fileID: 949626841131226061, guid: 566bc79ae5e964f51b16909e89d4d6fc, type: 3}

@@ -75,12 +75,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 22248b4f4b1ac8448b1950d0644cbc51, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9dcd98d1bb5f2436183dd0eeaf7622f3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.31, y: 0.29}
+  m_Size: {x: 0.74, y: 0.35}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -102,7 +102,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: 9a57f2d331479455391f371745d2be05, type: 2}
+  m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6566393054048381096}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92dcf298f787d4b958b718cdce06b0e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f8992a86bd394ce6a0dc8e8177f5ad2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   torque: 1
