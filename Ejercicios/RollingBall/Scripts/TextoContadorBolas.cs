@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class TextoContador : MonoBehaviour
+public class TextoContadorBolas : MonoBehaviour
 {
     public ReceptorBolas receptor;
     Text texto;

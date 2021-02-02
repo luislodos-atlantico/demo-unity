@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MovimientoLanzador : MonoBehaviour
+public class MovimientoLanzadorBolas : MonoBehaviour
 {
     public float velocidad = 10;
 

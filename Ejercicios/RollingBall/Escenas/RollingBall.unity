@@ -462,7 +462,7 @@ GameObject:
   - component: {fileID: 918133939}
   - component: {fileID: 918133938}
   m_Layer: 0
-  m_Name: Pala
+  m_Name: Golpeador
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -591,6 +591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tecla: 273
+  junta: {fileID: 0}
 --- !u!61 &918133939
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CreadorAutomatico : MonoBehaviour
+public class CreadorBolasAutomatico : MonoBehaviour
 {
     public GameObject bola;
     public float tiempoCreacion = 2;
@@ -13,6 +13,6 @@ public class CreadorAutomatico : MonoBehaviour
         {
             Instantiate(bola, transform.position, Quaternion.identity);
             contador = 0;
-        }        
+        }
     }
 }

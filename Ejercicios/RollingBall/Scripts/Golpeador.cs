@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Pala : MonoBehaviour
+public class Golpeador : MonoBehaviour
 {
     public KeyCode tecla = KeyCode.UpArrow;
     HingeJoint2D junta;
