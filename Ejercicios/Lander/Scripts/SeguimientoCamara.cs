@@ -7,6 +7,8 @@ public class SeguimientoCamara : MonoBehaviour
 
     void Update()
     {
+        if (objetoSeguido == null)
+            return;
         var x = objetoSeguido.transform.position.x;
         var y = objetoSeguido.transform.position.y;
         var z = camara.transform.position.z;

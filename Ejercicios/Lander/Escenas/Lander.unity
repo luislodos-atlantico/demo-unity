@@ -223,6 +223,7 @@ GameObject:
   - component: {fileID: 781359572}
   - component: {fileID: 781359573}
   - component: {fileID: 781359574}
+  - component: {fileID: 781359575}
   m_Layer: 0
   m_Name: Lander
   m_TagString: Untagged
@@ -312,7 +313,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0.1
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -463,6 +464,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   combustible: 100
   consumo: 10
+--- !u!114 &781359575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781359567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873519f91d54e894692da3b8d2d787c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadDestruccion: 2
 --- !u!4 &853256243 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3965843154701499527, guid: b08e832f9d5c39e49a4a84b7de8cddf0, type: 3}
