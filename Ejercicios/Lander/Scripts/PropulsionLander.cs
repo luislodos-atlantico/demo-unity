@@ -13,7 +13,7 @@ public class PropulsionLander : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.Space) && combustible.combustible > 0)
+        if (Input.GetKey(KeyCode.Space) && combustible.cantidad > 0)
         {
             cuerpo.AddRelativeForce(fuerzaPropulsion * Vector2.up);
         }

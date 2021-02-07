@@ -13,7 +13,7 @@ public class ParticulasPropulsor : MonoBehaviour
 
     void Update()
     {
-        if (combustible.combustible <= 0)
+        if (combustible.cantidad <= 0)
         {
             particulas.Stop();
             return;

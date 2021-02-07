@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EfectoContacto : MonoBehaviour
+public class EfectoBloqueContacto : MonoBehaviour
 {
     public ParticleSystem particulas;
     AudioSource fuenteSonido;

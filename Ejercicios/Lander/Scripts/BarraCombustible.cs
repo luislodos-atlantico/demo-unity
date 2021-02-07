@@ -8,6 +8,6 @@ public class BarraCombustible : MonoBehaviour
 
     private void Update()
     {
-        imagen.fillAmount = combustible.combustible / 100;
+        imagen.fillAmount = combustible.cantidad / 100;
     }
 }
