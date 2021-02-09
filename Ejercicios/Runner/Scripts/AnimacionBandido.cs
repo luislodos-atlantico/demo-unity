@@ -4,11 +4,6 @@ public class AnimacionBandido : MonoBehaviour
 {
     public Animator animador;
 
-    private void Start()
-    {
-        animador.Play("Reposo");
-    }
-
     private void Update()
     {
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.A))
