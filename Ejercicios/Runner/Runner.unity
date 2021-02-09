@@ -135,10 +135,10 @@ GameObject:
   - component: {fileID: 789559977}
   - component: {fileID: 789559976}
   - component: {fileID: 789559975}
+  - component: {fileID: 789559982}
   - component: {fileID: 789559980}
   - component: {fileID: 789559979}
   - component: {fileID: 789559981}
-  - component: {fileID: 789559982}
   - component: {fileID: 789559983}
   m_Layer: 0
   m_Name: Jugador
