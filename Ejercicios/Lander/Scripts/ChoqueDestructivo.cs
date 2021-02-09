@@ -14,4 +14,3 @@ public class ChoqueDestructivo : MonoBehaviour
         }
     }
 }
-git
