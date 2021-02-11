@@ -19,11 +19,5 @@ public class AnimacionBandido : MonoBehaviour
         {
             animador.SetTrigger("saltar");
         }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            animador.SetTrigger("atacar");
-        }
+            }
     }
-
-}
