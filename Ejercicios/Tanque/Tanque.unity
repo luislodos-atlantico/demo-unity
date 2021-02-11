@@ -227,6 +227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aceleracion: 10
+  cuerpo: {fileID: 2282781052192671237}
 --- !u!4 &508326863
 Transform:
   m_ObjectHideFlags: 0
@@ -981,8 +982,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bala: {fileID: 5130044362894742915, guid: 7318a39a50fea42f49504584f29c02e7, type: 3}
   origenDisparo: {fileID: 7985957617940942526}
-  impulsoBala: 5
   teclaDisparo: 32
+  impulsoBala: 5
 --- !u!50 &2282781052192671237
 Rigidbody2D:
   serializedVersion: 4

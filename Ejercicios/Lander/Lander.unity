@@ -437,6 +437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuerzaPropulsion: 5
   combustible: {fileID: 781359574}
+  cuerpo: {fileID: 781359570}
 --- !u!114 &781359573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -449,6 +450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b17b43b4b384d114f88a279826fdfb24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cuerpo: {fileID: 781359570}
   torque: 1
 --- !u!114 &781359574
 MonoBehaviour:
@@ -462,7 +464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d6def821c6a781429f056ffd3040f4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  combustible: 100
+  cantidad: 100
   consumo: 10
 --- !u!114 &781359575
 MonoBehaviour:
@@ -571,6 +573,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 781359569}
     m_Modifications:
+    - target: {fileID: 2635614935315743082, guid: b08e832f9d5c39e49a4a84b7de8cddf0, type: 3}
+      propertyPath: tecla
+      value: 97
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635614935315743082, guid: b08e832f9d5c39e49a4a84b7de8cddf0, type: 3}
+      propertyPath: combustible
+      value: 
+      objectReference: {fileID: 781359574}
     - target: {fileID: 3965843154701499524, guid: b08e832f9d5c39e49a4a84b7de8cddf0, type: 3}
       propertyPath: m_Name
       value: ParticulasPropulsor (1)
@@ -719,7 +729,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 976524595}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -2.86, y: 10.93, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -738,7 +748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camara: {fileID: 976524597}
-  objetoSeguido: {fileID: 781359567}
+  objetoSeguido: {fileID: 781359569}
 --- !u!1 &1022623057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1526,6 +1536,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 781359569}
     m_Modifications:
+    - target: {fileID: 2635614935315743082, guid: b08e832f9d5c39e49a4a84b7de8cddf0, type: 3}
+      propertyPath: tecla
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635614935315743082, guid: b08e832f9d5c39e49a4a84b7de8cddf0, type: 3}
+      propertyPath: combustible
+      value: 
+      objectReference: {fileID: 781359574}
     - target: {fileID: 3965843154701499524, guid: b08e832f9d5c39e49a4a84b7de8cddf0, type: 3}
       propertyPath: m_Name
       value: ParticulasPropulsor (2)
@@ -1769,6 +1787,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 781359569}
     m_Modifications:
+    - target: {fileID: 2635614935315743082, guid: b08e832f9d5c39e49a4a84b7de8cddf0, type: 3}
+      propertyPath: tecla
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635614935315743082, guid: b08e832f9d5c39e49a4a84b7de8cddf0, type: 3}
+      propertyPath: combustible
+      value: 
+      objectReference: {fileID: 781359574}
     - target: {fileID: 3965843154701499524, guid: b08e832f9d5c39e49a4a84b7de8cddf0, type: 3}
       propertyPath: m_Name
       value: ParticulasPropulsor

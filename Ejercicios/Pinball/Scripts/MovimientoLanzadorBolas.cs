@@ -6,17 +6,15 @@ public class MovimientoLanzadorBolas : MonoBehaviour
 
     void Update()
     {
+        var nuevaPosicion = transform.position;
         if (Input.GetKey(KeyCode.D))
         {
-            var x = transform.position.x + velocidad * Time.deltaTime;
-            var y = transform.position.y;
-            transform.position = new Vector2(x, y);
+            nuevaPosicion.x += velocidad * Time.deltaTime;
         }
         else if (Input.GetKey(KeyCode.A))
         {
-            var x = transform.position.x - velocidad * Time.deltaTime;
-            var y = transform.position.y;
-            transform.position = new Vector2(x, y);
+            nuevaPosicion.x -= velocidad * Time.deltaTime;
         }
+        transform.position = nuevaPosicion;
     }
 }

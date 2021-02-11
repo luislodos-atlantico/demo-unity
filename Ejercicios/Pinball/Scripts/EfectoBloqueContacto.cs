@@ -3,14 +3,12 @@ using UnityEngine;
 public class EfectoBloqueContacto : MonoBehaviour
 {
     public ParticleSystem particulas;
-    AudioSource fuenteSonido;
-    Animator animador;
+    public AudioSource fuenteSonido;
+    public Animator animador;
 
     void Start()
     {
         particulas.Stop();
-        fuenteSonido = GetComponent<AudioSource>();
-        animador = GetComponent<Animator>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

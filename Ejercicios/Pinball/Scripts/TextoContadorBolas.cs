@@ -4,12 +4,7 @@ using UnityEngine.UI;
 public class TextoContadorBolas : MonoBehaviour
 {
     public ReceptorBolas receptor;
-    Text texto;
-
-    void Start()
-    {
-        texto = GetComponent<Text>();
-    }
+    public Text texto;
 
     void Update()
     {

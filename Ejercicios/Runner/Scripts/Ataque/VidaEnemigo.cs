@@ -2,17 +2,17 @@ using UnityEngine;
 
 public class VidaEnemigo : MonoBehaviour
 {
-    public float vida = 50;
     public Animator animador;
+    public float vida = 50;
 
     public void Herir(float cantidad)
     {
         vida -= cantidad;
-        // animador.SetTrigger("herido");
+        animador.SetTrigger("herir");
         if (vida <= 0)
         {
-            // animador.SetTrigger("muerto");
-            Destroy(gameObject);
+            animador.SetTrigger("morir");
+            Destroy(this);
         }
     }
 }

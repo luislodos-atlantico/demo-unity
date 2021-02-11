@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public class Ataque : MonoBehaviour
+public class AtaqueJugador : MonoBehaviour
 {
-    public float fuerza = 10;
     public Animator animador;
+    public float fuerza = 10;
 
-    private void Update()
+    void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -13,7 +13,7 @@ public class Ataque : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         var vidaEnemigo = collision.GetComponent<VidaEnemigo>();
         if (vidaEnemigo != null)

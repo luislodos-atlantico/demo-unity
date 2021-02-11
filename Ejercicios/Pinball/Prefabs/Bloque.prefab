@@ -126,6 +126,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particulas: {fileID: 7035069397531566744}
+  fuenteSonido: {fileID: 5744941597583948186}
+  animador: {fileID: 1791636057346848304}
 --- !u!82 &5744941597583948186
 AudioSource:
   m_ObjectHideFlags: 0

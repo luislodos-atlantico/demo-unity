@@ -3,13 +3,7 @@ using UnityEngine;
 public class Golpeador : MonoBehaviour
 {
     public KeyCode tecla = KeyCode.UpArrow;
-    HingeJoint2D junta;
-
-    void Start()
-    {
-        junta = GetComponent<HingeJoint2D>();
-        junta.useMotor = false;
-    }
+    public HingeJoint2D junta;
 
     void Update()
     {

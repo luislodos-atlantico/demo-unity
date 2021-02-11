@@ -497,7 +497,7 @@ HingeJoint2D:
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: -1.08}
   m_ConnectedAnchor: {x: 3.3999996, y: -1.541}
-  m_UseMotor: 1
+  m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: -1000
     m_MaximumMotorForce: 10000
@@ -604,6 +604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tecla: 119
+  junta: {fileID: 918133934}
 --- !u!61 &918133939
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1520,3 +1521,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   receptor: {fileID: 1590278759}
+  texto: {fileID: 2104018845}

@@ -8,12 +8,9 @@ public class LimiteJugador : MonoBehaviour
     {
         if (transform.position.x < limite.position.x)
         {
-            var x = limite.position.x;
-            var y = transform.position.y;
-            var z = transform.position.z;
-            transform.position = new Vector3(x, y, z);
+            var posicionLimitada = transform.position;
+            posicionLimitada.x = limite.position.x;
+            transform.position = posicionLimitada;
         }
-            
-
     }
 }

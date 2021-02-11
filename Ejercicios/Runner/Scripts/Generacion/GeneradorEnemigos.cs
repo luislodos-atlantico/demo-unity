@@ -1,22 +1,21 @@
 using UnityEngine;
 
-public class GeneradorObstaculos : MonoBehaviour
+public class GeneradorEnemigos : MonoBehaviour
 {
-    public GameObject objeto;
+    public GameObject enemigo;
     public float tiempoCreacionMinimo = 1;
     public float tiempoCreacionMaximo = 3;
-    float contador;
     float tiempoCreacion;
+    float contador;
 
     private void Update()
     {
         contador += Time.deltaTime;
         if (contador >= tiempoCreacion)
         {
-            Instantiate(objeto, transform.position, transform.rotation);
+            Instantiate(enemigo, transform.position, transform.rotation);
             tiempoCreacion = Random.Range(tiempoCreacionMinimo, tiempoCreacionMaximo);
             contador = 0;
         }
     }
-
 }

@@ -2,13 +2,8 @@ using UnityEngine;
 
 public class GiroLander : MonoBehaviour
 {
+    public Rigidbody2D cuerpo;
     public float torque = 10;
-    Rigidbody2D cuerpo;
-
-    private void Start()
-    {
-        cuerpo = GetComponent<Rigidbody2D>();
-    }
 
     private void FixedUpdate()
     {

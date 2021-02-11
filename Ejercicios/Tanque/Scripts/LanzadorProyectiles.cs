@@ -4,8 +4,8 @@ public class LanzadorProyectiles : MonoBehaviour
 {
     public GameObject bala;
     public GameObject origenDisparo;
-    public float impulsoBala = 10;
     public KeyCode teclaDisparo = KeyCode.Space;
+    public float impulsoBala = 10;
 
     void Update()
     {

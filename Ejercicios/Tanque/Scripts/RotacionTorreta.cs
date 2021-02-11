@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class RotacionRaton : MonoBehaviour
+public class RotacionTorreta : MonoBehaviour
 {
     public float velocidad = 1;
     public float rotacionSuperior = 60;

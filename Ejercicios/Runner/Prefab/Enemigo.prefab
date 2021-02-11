@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5573056837024763534}
   - component: {fileID: 3036922096895397169}
   m_Layer: 0
-  m_Name: EnemigoOjo
+  m_Name: Enemigo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -154,5 +154,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 544445f1005c5ef4ebd4dcddf4e7e153, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animador: {fileID: 5573056837024763531}
   vida: 100
-  animador: {fileID: 0}

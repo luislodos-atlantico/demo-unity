@@ -1,14 +1,10 @@
 using UnityEngine;
 
-public class VelocidadHorizontal : MonoBehaviour
+public class MovimientoCorrer : MonoBehaviour
 {
+    public Animator animador;
+    public Rigidbody2D cuerpo;
     public float velocidad = 2;
-    Rigidbody2D cuerpo;
-
-    void Start()
-    {
-        cuerpo = GetComponent<Rigidbody2D>();
-    }
 
     void FixedUpdate()
     {
@@ -17,10 +13,16 @@ public class VelocidadHorizontal : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             velocidadHorizontal = velocidad;
+            animador.SetBool("corriendo", true);
         }
         else if (Input.GetKey(KeyCode.A))
         {
             velocidadHorizontal = -velocidad;
+            animador.SetBool("corriendo", true);
+        }
+        else
+        {
+            animador.SetBool("corriendo", false);
         }
         cuerpo.velocity = new Vector2(velocidadHorizontal, velocidadVertical);
     }

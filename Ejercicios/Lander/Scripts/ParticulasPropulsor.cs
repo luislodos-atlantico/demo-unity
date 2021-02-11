@@ -6,7 +6,7 @@ public class ParticulasPropulsor : MonoBehaviour
     public KeyCode tecla;
     public Combustible combustible;
 
-    private void Start()
+    void Start()
     {
         particulas.Stop();
     }

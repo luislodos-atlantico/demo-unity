@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3965843154701499527}
   - component: {fileID: 3965843154701499529}
   - component: {fileID: 3965843154701499526}
-  - component: {fileID: 3965843154701499528}
+  - component: {fileID: 2635614935315743082}
   m_Layer: 0
   m_Name: ParticulasPropulsor
   m_TagString: Untagged
@@ -4759,7 +4759,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 707dafdf9e2d9574c9a6127287212e83, type: 2}
+  - {fileID: 2100000, guid: 14b17baf1125b4625a843bed776ccb17, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4805,7 +4805,7 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &3965843154701499528
+--- !u!114 &2635614935315743082
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4819,3 +4819,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particulas: {fileID: 3965843154701499529}
   tecla: 0
+  combustible: {fileID: 0}

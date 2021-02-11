@@ -1,14 +1,9 @@
 ﻿using UnityEngine;
 
-public class AceleracionHorizontal : MonoBehaviour
+public class MovimientoTanque : MonoBehaviour
 {
     public float aceleracion = 10;
-    Rigidbody2D cuerpo;
-
-    void Start()
-    {
-        cuerpo = GetComponent<Rigidbody2D>();
-    }
+    public Rigidbody2D cuerpo;
 
     void FixedUpdate()
     {
