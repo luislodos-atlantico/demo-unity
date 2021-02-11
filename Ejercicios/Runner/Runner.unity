@@ -168,6 +168,63 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plataforma: {fileID: 1408866200}
   detector: {fileID: 3650062245807320928}
+--- !u!1 &164572698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 164572699}
+  - component: {fileID: 164572700}
+  m_Layer: 0
+  m_Name: Ataque
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &164572699
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164572698}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.027, y: -0.117, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 789559978}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &164572700
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164572698}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.25079423, y: 0.09263571}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.49841157, y: 0.24535786}
+  m_EdgeRadius: 0
 --- !u!1 &606518427
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,9 +315,11 @@ GameObject:
   - component: {fileID: 789559975}
   - component: {fileID: 789559982}
   - component: {fileID: 789559980}
+  - component: {fileID: 789559985}
   - component: {fileID: 789559979}
   - component: {fileID: 789559981}
   - component: {fileID: 789559983}
+  - component: {fileID: 789559986}
   - component: {fileID: 789559984}
   m_Layer: 0
   m_Name: Jugador
@@ -365,10 +424,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 789559974}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.89, y: 1.23, z: 0}
+  m_LocalPosition: {x: -4.99, y: -0.74, z: 0}
   m_LocalScale: {x: 6.113, y: 6.113, z: 6.113}
   m_Children:
   - {fileID: 1859832015}
+  - {fileID: 164572699}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -393,7 +453,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 789559974}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c08296aa902f9450cbf0be101dc0fe19, type: 3}
   m_Name: 
@@ -438,7 +498,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 789559974}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0f167dd9b5649943b990b253df55796, type: 3}
   m_Name: 
@@ -457,6 +517,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   limite: {fileID: 784257760}
+--- !u!114 &789559985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789559974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67677963297a98942aa120543fb159fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 10
+--- !u!114 &789559986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789559974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65f1c7182d5b73243b56bc21bf491793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animador: {fileID: 789559982}
 --- !u!1 &1408866200 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7758173110969757212, guid: 664470fdd95dc9d4384f9fd051e65a81, type: 3}
