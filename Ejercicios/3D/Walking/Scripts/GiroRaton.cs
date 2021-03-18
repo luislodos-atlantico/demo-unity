@@ -7,6 +7,7 @@ public class GiroRaton : MonoBehaviour
 
     void FixedUpdate()
     {
-        cuerpo.AddTorque(Input.GetAxis("Mouse X") * Vector3.up * fuerza);
+        var ejeRaton = Input.GetAxis("Mouse X");
+        cuerpo.angularVelocity = ejeRaton * Vector3.up * fuerza;
     }
 }
