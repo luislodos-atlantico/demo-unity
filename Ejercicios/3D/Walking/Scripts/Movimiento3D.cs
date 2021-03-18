@@ -6,7 +6,7 @@ public class Movimiento3D : MonoBehaviour
     public float fuerzaAvance;
     public float fuerzaGiro;
 
-    void Update()
+    void FixedUpdate()
     {
         // AVANCE
         if (Input.GetKey(KeyCode.W))
@@ -18,17 +18,7 @@ public class Movimiento3D : MonoBehaviour
             cuerpo.AddRelativeForce(fuerzaAvance * Vector3.back);
         }
 
-        // LATERAL
-        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKey(KeyCode.D))
-        {
-            cuerpo.AddForce(fuerzaAvance * Vector3.right);
-        }
-        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKey(KeyCode.A))
-        {
-            cuerpo.AddForce(fuerzaAvance * Vector3.left);
-        }
-
-        // ROTACION
+        // GIRO
         if (Input.GetKey(KeyCode.D))
         {
             cuerpo.AddTorque(fuerzaGiro * Vector3.up);
