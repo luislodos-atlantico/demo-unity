@@ -8,27 +8,9 @@ public class MovimientoRigidbody3D : MonoBehaviour
     void FixedUpdate()
     {
         // AVANZAR
-        if (Input.GetKey(KeyCode.W))
-        {
-            cuerpo.AddRelativeForce(fuerza * Vector3.forward);
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            cuerpo.AddRelativeForce(fuerza * Vector3.back);
-        }
+        cuerpo.AddRelativeForce(fuerza * Input.GetAxis("Vertical") * Vector3.forward);
 
-        // GIRO TECLAS
-        if (Input.GetKey(KeyCode.D))
-        {
-            cuerpo.AddTorque(fuerza * Vector3.up);
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            cuerpo.AddTorque(fuerza * Vector3.down);
-        }
-
-        // GIRO RATÓN
-        var ejeRaton = Input.GetAxis("Mouse X");
-        cuerpo.angularVelocity = ejeRaton * Vector3.up * fuerza;
+        // GIRO
+        cuerpo.AddTorque(fuerza * Input.GetAxis("Horizontal") * Vector3.up);
     }
 }

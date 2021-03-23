@@ -237,9 +237,15 @@ MonoBehaviour:
   velocidadMovimiento: 5
   velocidadRotacion: 100
   velocidadCaida: -1
+  sensibilidad_raton: 100
 --- !u!143 &60725646 stripped
 CharacterController:
   m_CorrespondingSourceObject: {fileID: 3299335630345457719, guid: 1e6ff8f53f2ea494f8b8e180888527f5, type: 3}
+  m_PrefabInstance: {fileID: 1736653762}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &531283516 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8851978639200751300, guid: 1e6ff8f53f2ea494f8b8e180888527f5, type: 3}
   m_PrefabInstance: {fileID: 1736653762}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1453163238
@@ -5198,8 +5204,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1600578247}
-  m_LocalRotation: {x: 0.14629655, y: 0.7629628, z: -0.18549712, w: 0.6017274}
-  m_LocalPosition: {x: 29.092663, y: 7.549388, z: 62.60381}
+  m_LocalRotation: {x: 0.14904821, y: 0.61295336, z: -0.11915489, w: 0.76673}
+  m_LocalPosition: {x: 23.546532, y: 3.268999, z: 58.237045}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5410,7 +5416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183985006479692926, guid: 1e6ff8f53f2ea494f8b8e180888527f5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8851978639200751300, guid: 1e6ff8f53f2ea494f8b8e180888527f5, type: 3}
       propertyPath: m_RootOrder
@@ -5459,6 +5465,89 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7616412174479221806, guid: 1e6ff8f53f2ea494f8b8e180888527f5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1e6ff8f53f2ea494f8b8e180888527f5, type: 3}
+--- !u!1 &1939833621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1939833622}
+  - component: {fileID: 1939833624}
+  - component: {fileID: 1939833623}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1939833622
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939833621}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.907, z: -1.211}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 531283516}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &1939833623
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939833621}
+  m_Enabled: 1
+--- !u!20 &1939833624
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939833621}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!33 &78933397379572651
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5963,7 +6052,6 @@ GameObject:
   - component: {fileID: 4091584929352575975}
   - component: {fileID: 4091584929352575974}
   - component: {fileID: 4091584929352575973}
-  - component: {fileID: 4091584929352575972}
   m_Layer: 0
   m_Name: suv
   m_TagString: Untagged
@@ -5971,20 +6059,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &4091584929352575972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4091584929352575971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c09b4e28b7e6dd64faf0bfe80090f64d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cuerpo: {fileID: 4091584929352575975}
-  fuerza: 20
 --- !u!114 &4091584929352575973
 MonoBehaviour:
   m_ObjectHideFlags: 0
