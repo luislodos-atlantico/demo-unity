@@ -591,8 +591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cuerpo: {fileID: 2984105630812904842}
-  fuerzaAvance: 30
-  fuerzaGiro: 4
+  fuerza: 20
 --- !u!114 &2984105630812904845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -606,7 +605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cuerpo: {fileID: 2984105630812904842}
-  fuerzaGiro: 5
+  fuerza: 5
 --- !u!23 &3199694126742712480
 MeshRenderer:
   m_ObjectHideFlags: 0
