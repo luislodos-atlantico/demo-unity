@@ -2,40 +2,23 @@ using UnityEngine;
 
 public class MovimientoPersonaje : MonoBehaviour
 {
-    CharacterController controller;
-    Vector3 playerVelocity;
-    bool groundedPlayer;
-    float playerSpeed = 2.0f;
-    float jumpHeight = 1.0f;
-    float gravityValue = -9.81f;
-
-    void Start()
-    {
-        controller = GetComponent<CharacterController>();
-    }
+    public CharacterController controlador;
+    public float velocidadMovimiento = 5;
+    public float velocidadRotacion = 100;
+    public float velocidadCaida = -1;
 
     void Update()
     {
-        groundedPlayer = controller.isGrounded;
-        if (groundedPlayer && playerVelocity.y < 0)
-        {
-            playerVelocity.y = 0f;
-        }
+        // MOVIMIENTO
+        var direccion = Vector3.zero;
+        direccion.z = Input.GetAxisRaw("Vertical") * Time.deltaTime;
+        direccion.y += velocidadCaida * Time.deltaTime;
+        var direccionRelativa = transform.TransformDirection(direccion);
+        controlador.Move(direccionRelativa * velocidadMovimiento);
 
-        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        controller.Move(move * Time.deltaTime * playerSpeed);
-
-        if (move != Vector3.zero)
-        {
-            gameObject.transform.forward = move;
-        }
-
-        if (Input.GetButtonDown("Jump") && groundedPlayer)
-        {
-            playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
-        }
-
-        playerVelocity.y += gravityValue * Time.deltaTime;
-        controller.Move(playerVelocity * Time.deltaTime);
+        // ROTACIÓN
+        var rotacion = Vector3.zero;
+        rotacion.y = Input.GetAxisRaw("Horizontal") * velocidadRotacion * Time.deltaTime;
+        transform.Rotate(rotacion);
     }
 }
