@@ -7,6 +7,7 @@ public class MovimientoPersonaje : MonoBehaviour
     public float velocidadRotacion = 100;
     public float velocidadCaida = -1;
     public float sensibilidad_raton = 100;
+    Vector3 rotacion_raton = Vector3.zero;
 
     void Update()
     {
@@ -34,9 +35,9 @@ public class MovimientoPersonaje : MonoBehaviour
         transform.Rotate(rotacion_teclado);
 
         // ROTACIÓN RATÓN
-        var rotacion_raton = Vector3.zero;
-        rotacion_raton.y = Input.GetAxis("Mouse X") * sensibilidad_raton * Time.deltaTime;
-        rotacion_raton.x = -Input.GetAxis("Mouse Y") * sensibilidad_raton * Time.deltaTime;
-        transform.Rotate(rotacion_raton);
+        rotacion_raton.y += Input.GetAxis("Mouse X") * sensibilidad_raton * Time.deltaTime;
+        rotacion_raton.x -= Input.GetAxis("Mouse Y") * sensibilidad_raton * Time.deltaTime;
+        rotacion_raton.z = 0;
+        transform.rotation = Quaternion.Euler(rotacion_raton);
     }
 }
