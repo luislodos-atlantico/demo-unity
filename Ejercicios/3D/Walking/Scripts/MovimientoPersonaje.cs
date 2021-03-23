@@ -30,9 +30,11 @@ public class MovimientoPersonaje : MonoBehaviour
         controlador.Move(direccionRelativa * velocidadMovimiento);
 
         // ROTACIÓN TECLADO
+        /*
         var rotacion_teclado = Vector3.zero;
         rotacion_teclado.y = Input.GetAxis("Horizontal") * velocidadRotacion * Time.deltaTime;
         transform.Rotate(rotacion_teclado);
+        */
 
         // ROTACIÓN RATÓN
         rotacion_raton.y += Input.GetAxis("Mouse X") * sensibilidad_raton * Time.deltaTime;
