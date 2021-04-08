@@ -562,6 +562,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8183985006479692926}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ce0c26b93fdd334b8a495e8ad49ce69, type: 3}
+  m_Script: {fileID: 11500000, guid: f50715db673bf47dfbece414889dc3c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controlador: {fileID: 3299335630345457719}
+  velocidadMovimiento: 5
+  velocidadRotacion: 100
+  velocidadCaida: -1
+  sensibilidad_raton: 100

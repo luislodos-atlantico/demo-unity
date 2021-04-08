@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MovimientoRigidbody3D : MonoBehaviour
+public class MovimientoVehiculo : MonoBehaviour
 {
     public Rigidbody cuerpo;
     public float fuerza;
