@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Teletransporte : MonoBehaviour
+public class Teletransportador : MonoBehaviour
 {
     public GameObject teletransportado;
     public Transform[] destino;

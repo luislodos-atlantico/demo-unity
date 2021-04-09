@@ -1,9 +1,6 @@
 using UnityEngine;
 
-public class Interactivo : MonoBehaviour
+public abstract class Interactivo : MonoBehaviour
 {
-    public void Accionar()
-    {
-        print("Accionado");
-    }
+    public abstract void Accionar();
 }
