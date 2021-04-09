@@ -6,4 +6,9 @@ public abstract class LuzInteractiva : Interactivo
     {
         print("Luz");
     }
+
+    public override void Resaltar()
+    {
+        print("Luz");
+    }
 }

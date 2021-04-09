@@ -4,12 +4,24 @@ public class Interactuador : MonoBehaviour
 {
     public KeyCode tecla;
 
-    void OnTriggerStay(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         var interactivo = other.GetComponent<Interactivo>();
         if (interactivo != null)
         {
-            interactivo.Accionar();
+            interactivo.Resaltar();
+        }
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (Input.GetKeyDown(tecla))
+        {
+            var interactivo = other.GetComponent<Interactivo>();
+            if (interactivo != null)
+            {
+                interactivo.Accionar();
+            }
         }
     }
 }
