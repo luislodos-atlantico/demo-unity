@@ -1,14 +1,14 @@
 using UnityEngine;
 
-public class PuertaInteractiva : Interactivo
+public class CilindroInteractivo : Interactivo
 {
     public override void Accionar()
     {
-        print("Puerta");
+        print("Cilindro accionado");
     }
 
     public override void Resaltar(bool valor)
     {
-        print("Puerta");
+        print("Cilindro accionado");
     }
 }

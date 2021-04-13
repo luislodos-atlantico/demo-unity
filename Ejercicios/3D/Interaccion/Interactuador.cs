@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Interactuador : MonoBehaviour
 {
-    public KeyCode tecla;
+    public KeyCode tecla = KeyCode.E;
 
     void OnTriggerEnter(Collider other)
     {
@@ -10,15 +10,6 @@ public class Interactuador : MonoBehaviour
         if (interactivo != null)
         {
             interactivo.Resaltar(true);
-        }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        var interactivo = other.GetComponent<Interactivo>();
-        if (interactivo != null)
-        {
-            interactivo.Resaltar(false);
         }
     }
 
@@ -31,6 +22,15 @@ public class Interactuador : MonoBehaviour
             {
                 interactivo.Accionar();
             }
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        var interactivo = other.GetComponent<Interactivo>();
+        if (interactivo != null)
+        {
+            interactivo.Resaltar(false);
         }
     }
 }
