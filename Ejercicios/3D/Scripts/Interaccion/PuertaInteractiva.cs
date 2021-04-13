@@ -6,4 +6,9 @@ public class PuertaInteractiva : Interactivo
     {
         print("Puerta");
     }
+
+    public override void Resaltar(bool valor)
+    {
+        print("Puerta");
+    }
 }

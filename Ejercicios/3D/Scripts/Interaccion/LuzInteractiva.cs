@@ -7,8 +7,8 @@ public abstract class LuzInteractiva : Interactivo
         print("Luz");
     }
 
-    public override void Resaltar()
+    public override void Resaltar(bool valor)
     {
-        print("Luz");
+        print("Puerta");
     }
 }
