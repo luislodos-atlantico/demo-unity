@@ -2,16 +2,27 @@ using UnityEngine;
 
 public class EsferaInteractiva : Interactivo
 {
-    public override void Accionar()
+    Material material;
+    Color colorInicial;
+
+    void Start()
     {
-        print("Esfera accionada");
+        material = GetComponent<Renderer>().material;
+        colorInicial = material.color;
     }
 
-    public override void Resaltar(bool valor)
+    public override void Entrar()
     {
-        if (valor)
-            print("Esfera cerca");
-        else
-            print("Esfera lejos");
+        material.color = Color.red;
+    }
+
+    public override void Accionar()
+    {
+        material.color = Color.green;
+    }
+
+    public override void Salir()
+    {
+        material.color = colorInicial;
     }
 }

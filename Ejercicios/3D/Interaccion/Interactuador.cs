@@ -9,7 +9,7 @@ public class Interactuador : MonoBehaviour
         var interactivo = other.GetComponent<Interactivo>();
         if (interactivo != null)
         {
-            interactivo.Resaltar(true);
+            interactivo.Entrar();
         }
     }
 
@@ -30,7 +30,7 @@ public class Interactuador : MonoBehaviour
         var interactivo = other.GetComponent<Interactivo>();
         if (interactivo != null)
         {
-            interactivo.Resaltar(false);
+            interactivo.Salir();
         }
     }
 }
