@@ -1,19 +1,22 @@
 using UnityEngine;
 
-public class CilindroInteractivo : Interactivo
+public class TextoInteractivo : Interactivo
 {
+    [TextArea]
+    public string texto;
+
     public override void Accionar()
     {
-        print("Cilindro accionado");
+        print(texto);
     }
 
     public override void Entrar()
     {
-        print("Cilindro cerca");
+        
     }
 
     public override void Salir()
     {
-        print("Cilindro lejos");
+        
     }
 }

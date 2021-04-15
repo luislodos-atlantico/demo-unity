@@ -11,14 +11,14 @@ public class EsferaInteractiva : Interactivo
         colorInicial = material.color;
     }
 
-    public override void Entrar()
-    {
-        material.color = Color.red;
-    }
-
     public override void Accionar()
     {
         material.color = Color.green;
+    }
+
+    public override void Entrar()
+    {
+        material.color = Color.red;
     }
 
     public override void Salir()
