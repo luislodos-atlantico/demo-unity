@@ -18,7 +18,6 @@ public class Teletransportador : MonoBehaviour
             {
                 teletransportado.transform.position = punto.transform.position;
             }
-        }
-     
+        }    
     }
 }
