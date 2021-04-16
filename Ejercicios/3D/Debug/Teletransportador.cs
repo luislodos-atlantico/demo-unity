@@ -3,15 +3,22 @@ using UnityEngine;
 public class Teletransportador : MonoBehaviour
 {
     public GameObject teletransportado;
-    public Transform[] destino;
+    PuntoTeletransporte[] puntos;
+
+    void Start()
+    {
+        puntos = FindObjectsOfType<PuntoTeletransporte>();
+    }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-            teletransportado.transform.position = destino[0].transform.position;     
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-            teletransportado.transform.position = destino[1].transform.position;
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-            teletransportado.transform.position = destino[2].transform.position;
+        foreach (var punto in puntos)
+        {
+            if (Input.GetKeyDown(punto.tecla))
+            {
+                teletransportado.transform.position = punto.transform.position;
+            }
+        }
+     
     }
 }

@@ -2,8 +2,13 @@ using UnityEngine;
 
 public class MovimientoVehiculo : MonoBehaviour
 {
-    public Rigidbody cuerpo;
     public float fuerza;
+    Rigidbody cuerpo;
+
+    void Start()
+    {
+        cuerpo = GetComponent<Rigidbody>();
+    }
 
     void FixedUpdate()
     {
