@@ -2,11 +2,13 @@ using UnityEngine;
 
 public class MovimientoPersonaje : MonoBehaviour
 {
-    public float velocidadMovimiento = 5;
+    public float velocidadAvance = 5;
     public float velocidadRotacion = 100;
-    public float velocidadCaida = -1;
+    public float velocidadCaida = 0.1f;
+    public float velocidadSalto = 10;
     public float sensibilidad_raton = 100;
     CharacterController controlador;
+    Vector3 direccionMovimiento = Vector3.zero;
     Vector3 rotacion_raton = Vector3.zero;
 
     void Start()
@@ -17,24 +19,23 @@ public class MovimientoPersonaje : MonoBehaviour
     void Update()
     {
         // MOVIMIENTO AVANZAR Y RETROCEDER
-        var direccion_avanzar = Vector3.zero;
-        direccion_avanzar.z = Input.GetAxis("Vertical") * Time.deltaTime;
-        var direccionRelativa = transform.TransformDirection(direccion_avanzar);
-        controlador.Move(direccionRelativa * velocidadMovimiento);
+        var direccionAvanzar = Input.GetAxis("Vertical") * Time.deltaTime * Vector3.forward;
+        var direccionRelativa = transform.TransformDirection(direccionAvanzar);
+        direccionMovimiento.x = direccionRelativa.x * velocidadAvance;
+        direccionMovimiento.z = direccionRelativa.z * velocidadAvance;
 
-        // MOVIMIENTO LATERAL
-        /*
-        var direccion_lateral = Vector3.zero;
-        direccion_lateral.x = Input.GetAxis("Horizontal") * Time.deltaTime;
-        direccionRelativa = transform.TransformDirection(direccion_lateral);
-        controlador.Move(direccionRelativa * velocidadMovimiento);
-        */
-
-        // CAÍDA
-        var direccion_caida = Vector3.zero;
-        direccion_caida.y += velocidadCaida * Time.deltaTime;
-        direccionRelativa = transform.TransformDirection(direccion_caida);
-        controlador.Move(direccionRelativa * velocidadMovimiento);
+        // SALTO
+        if (Input.GetButtonDown("Jump") && controlador.isGrounded)
+        {
+            direccionMovimiento.y = velocidadSalto * Time.deltaTime;
+        }
+        else
+        {
+            direccionMovimiento.y -= velocidadCaida * Time.deltaTime;
+        }
+        
+        // MOVIMIENTO
+        controlador.Move(direccionMovimiento);
 
         // ROTACIÓN CON TECLADO
         var rotacion_teclado = Vector3.zero;
