@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Salto : MonoBehaviour
+public class Salto2D : MonoBehaviour
 {
     public float velocidad_salto = 5;
     public DetectorSuelo detector;

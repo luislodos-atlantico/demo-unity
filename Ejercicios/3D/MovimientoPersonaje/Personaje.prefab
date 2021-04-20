@@ -201,6 +201,7 @@ GameObject:
   - component: {fileID: 6572158165020926564}
   - component: {fileID: 6572158165020926565}
   - component: {fileID: 6572158165020926561}
+  - component: {fileID: 1285225102175029477}
   m_Layer: 0
   m_Name: Personaje
   m_TagString: Untagged
@@ -237,10 +238,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f50715db673bf47dfbece414889dc3c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadMovimiento: 5
-  velocidadRotacion: 100
-  velocidadCaida: -1
-  sensibilidad_raton: 100
+  velocidadAvance: 5
+  velocidadCaida: 0.1
+  velocidadSalto: 10
 --- !u!143 &6572158165020926561
 CharacterController:
   m_ObjectHideFlags: 0
@@ -259,6 +259,19 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1285225102175029477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6572158165020926560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f41349f89b3b4546afd57b9befeefd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadRotacion: 100
 --- !u!1 &6572158165190999263
 GameObject:
   m_ObjectHideFlags: 0
