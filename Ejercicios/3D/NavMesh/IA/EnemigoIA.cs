@@ -59,7 +59,8 @@ public class EnemigoIA : MonoBehaviour
 
     void Atacar()
     {
-        print("Atacar");
+        var vida = jugador.GetComponent<Vida>();
+        vida.Herir();
     }
 
     void OnDrawGizmosSelected()
