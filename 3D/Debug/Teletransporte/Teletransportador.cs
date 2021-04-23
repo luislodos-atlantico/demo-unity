@@ -17,6 +17,7 @@ public class Teletransportador : MonoBehaviour
             if (Input.GetKeyDown(punto.tecla))
             {
                 teletransportado.transform.position = punto.transform.position;
+                teletransportado.transform.rotation = punto.transform.rotation;
             }
         }    
     }
