@@ -3,7 +3,7 @@ using UnityEngine.AI;
 
 public class EnemigoIA : MonoBehaviour
 {
-    const float DISTANCIA_LLEGADA = 5f;
+    public float distanciaLlegada = 5f;
     public float distanciaPerseguir = 15;
     public float distanciaAtacar = 2;
     public Transform[] puntos;
@@ -36,10 +36,9 @@ public class EnemigoIA : MonoBehaviour
 
     void Patrullar()
     {
-        print(puntoActual);
         agente.destination = puntos[puntoActual].position;
         var distanciaPunto = (puntos[puntoActual].position - transform.position).magnitude;
-        if (distanciaPunto < DISTANCIA_LLEGADA)
+        if (distanciaPunto < distanciaLlegada)
         {
             if (puntoActual < puntos.Length - 1)
             {
