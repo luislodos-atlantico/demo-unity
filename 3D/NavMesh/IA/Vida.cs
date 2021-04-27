@@ -10,9 +10,13 @@ public class Vida : MonoBehaviour
         animador = GetComponent<Animator>();
     }
 
-    public void Herir()
+    public void Herir(float cantidad)
     {
         animador.SetTrigger("herido");
-        puntosVida -= 1.0f;
+        puntosVida -= cantidad;
+        if (puntosVida <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }

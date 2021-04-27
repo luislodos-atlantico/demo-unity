@@ -19,6 +19,11 @@ public class EnemigoIA : MonoBehaviour
 
     void Update()
     {
+        if (!jugador)
+        {
+            Patrullar();
+            return;
+        }
         var distanciaJugador = (jugador.transform.position - transform.position).magnitude;
         if (distanciaJugador < distanciaAtacar)
         {
@@ -59,7 +64,7 @@ public class EnemigoIA : MonoBehaviour
     void Atacar()
     {
         var vida = jugador.GetComponent<Vida>();
-        vida.Herir();
+        vida.Herir(20 * Time.deltaTime);
     }
 
     void OnDrawGizmosSelected()
