@@ -19,5 +19,9 @@ public class AnimacionPersonaje : MonoBehaviour
         {
             animador.SetBool("caminando", false);
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            animador.SetTrigger("atacar");
+        }
     }
 }
