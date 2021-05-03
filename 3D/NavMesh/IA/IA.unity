@@ -477,7 +477,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85166f49af615a546b917e57e3050770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jugador: {fileID: 1082820940}
   distanciaLlegada: 5
   distanciaPerseguir: 13.16
   distanciaAtacar: 3.51
